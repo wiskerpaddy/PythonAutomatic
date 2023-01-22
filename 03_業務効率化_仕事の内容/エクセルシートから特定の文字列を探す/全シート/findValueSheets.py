@@ -2,8 +2,10 @@ import sys
 import os
 from openpyxl import load_workbook
 from pathlib import Path
+import codecs
 
 EXCEL_SUFFIX = ['.xlsx','.xlsm','.xlsb','.xltx']
+resultLog =[]
 
 def findValue(targetValue):
     # ①フォルダー内のファイル一覧を取得
@@ -37,16 +39,27 @@ def findValue(targetValue):
         for i in range(len(wb.worksheets)):
             ws = wb.worksheets[i]
             # エクセルのデータをすべて読み込む
-            for row in ws:
-                for column in row:
+            for rows in ws:
+                for column in rows:
                     if str(column.value) == targetValue:
-                        dateCount = dateCount + 1 
-    
-        print("「" + targetValue + "」は、" + path.name + "に" + str(dateCount) + "個ありました。")
+                        dateCount = dateCount + 1
+                        ms = "『" + ws.title + "』の" + str(rows) + "行目" + str(column) + "列目に見つかりました。"
+                        resultLog.append(ms)
+
+        ms = "「" + targetValue + "」は、" + path.name + "に" + str(dateCount) + "個ありました。"
+        print(ms)
+
+        # 実行結果をテキストファイルに書き込む
+        resultLog.append(ms)
+        print(*resultLog, sep="\n",file=codecs.open('resultLog.txt', 'w', 'utf-8'))
 
 if __name__ == '__main__':
     args = sys.argv
     try:
         findValue(args[1])
+
     except Exception as e:
         print(e)
+
+    finally:
+        print("処理が終了しました。")

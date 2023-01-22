@@ -1,0 +1,8 @@
+『Sheet1』の(<EmptyCell>, <ReadOnlyCell 'Sheet1'.B3>)行目<ReadOnlyCell 'Sheet1'.B3>列目に見つかりました。
+『Sheet2』の(<EmptyCell>, <EmptyCell>, <ReadOnlyCell 'Sheet2'.C5>)行目<ReadOnlyCell 'Sheet2'.C5>列目に見つかりました。
+『Sheet2』の(<EmptyCell>, <EmptyCell>, <ReadOnlyCell 'Sheet2'.C6>)行目<ReadOnlyCell 'Sheet2'.C6>列目に見つかりました。
+「あいうえお」は、売上_新宿店 - コピー.xlsxに3個ありました。
+『Sheet1』の(<EmptyCell>, <ReadOnlyCell 'Sheet1'.B3>)行目<ReadOnlyCell 'Sheet1'.B3>列目に見つかりました。
+『Sheet2』の(<EmptyCell>, <EmptyCell>, <ReadOnlyCell 'Sheet2'.C5>)行目<ReadOnlyCell 'Sheet2'.C5>列目に見つかりました。
+『Sheet2』の(<EmptyCell>, <EmptyCell>, <ReadOnlyCell 'Sheet2'.C6>)行目<ReadOnlyCell 'Sheet2'.C6>列目に見つかりました。
+「あいうえお」は、売上_新宿店.xlsxに3個ありました。
